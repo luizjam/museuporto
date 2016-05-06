@@ -2888,11 +2888,10 @@ function wp_untrash_post_comments( $post = null ) {
 
 	foreach ( $group_by_status as $status => $comments ) {
 		// Sanity check. This shouldn't happen.
-		if ( 'post-trashed' == $status ) {
+		if ( 'post-trashed' == $status )
 			$status = '0';
-		}
-		$comments_in = implode( ', ', array_map( 'intval', $comments ) );
-		$wpdb->query( $wpdb->prepare( "UPDATE $wpdb->comments SET comment_approved = %s WHERE comment_ID IN ($comments_in)", $status ) );
+		$comments_in = implode( "', '", $comments );
+		$wpdb->query( "UPDATE $wpdb->comments SET comment_approved = '$status' WHERE comment_ID IN ('" . $comments_in . "')" );
 	}
 
 	clean_comment_cache( array_keys($statuses) );
@@ -4720,14 +4719,9 @@ function is_local_attachment($url) {
 function wp_insert_attachment( $args, $file = false, $parent = 0 ) {
 	$defaults = array(
 		'file'        => $file,
-		'post_parent' => 0
+		'post_parent' => $parent
 	);
-
 	$data = wp_parse_args( $args, $defaults );
-
-	if ( ! empty( $parent ) ) {
-		$data['post_parent'] = $parent;
-	}
 
 	$data['post_type'] = 'attachment';
 

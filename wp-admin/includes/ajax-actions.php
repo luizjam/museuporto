@@ -1529,12 +1529,10 @@ function wp_ajax_inline_save() {
 		$data['parent_id'] = $data['post_parent'];
 
 	// Status.
-	if ( isset( $data['keep_private'] ) && 'private' == $data['keep_private'] ) {
-		$data['visibility']  = 'private';
+	if ( isset($data['keep_private']) && 'private' == $data['keep_private'] )
 		$data['post_status'] = 'private';
-	} else {
+	else
 		$data['post_status'] = $data['_status'];
-	}
 
 	if ( empty($data['comment_status']) )
 		$data['comment_status'] = 'closed';

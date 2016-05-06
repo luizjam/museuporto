@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2014-10-27 00:47:51+0000\n"
+"PO-Revision-Date: 2014-09-04 14:08:04+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,23 +20,23 @@ msgstr "Use as setas na parte superior da caixa de diálogo, ou as teclas de set
 
 #: wp-admin/upload.php:36 wp-admin/upload.php:202
 msgid "You can view your media in a simple visual grid or a list with columns. Switch between these views using the icons to the left above the media."
-msgstr "Você pode visualizar a sua mídia em grade ou em lista com colunas. Você pode alternar entre essas opções de visualização utilizando os ícones à esquerda acima da mídia."
+msgstr "Você pode ver a sua mídia em uma grade visual simples ou uma lista com colunas. Você pode alternar entre essas opções de visualização, utilizando os ícones à esquerda acima da mídia."
 
 #: wp-admin/upload.php:37
 msgid "To delete media items, click the Bulk Select button at the top of the screen. Select any items you wish to delete, then click the Delete Selected button. Clicking the Cancel Selection button takes you back to viewing your media."
-msgstr "Para excluir itens da biblioteca, clique no botão Seleção em Massa no topo da tela. Selecione os itens que você deseja excluir e clique no botão Excluir Selecionado. Ao clicar no botão Cancelar Seleção, você será levado de volta para a visualização de sua mídia."
+msgstr "Para excluir itens de mídia, clique no botão Seleção em Massa no topo da tela. Selecione os itens que você deseja excluir e clique no botão Excluir Selecionado. Ao clicar no botão Cancelar Seleção, você será levado de volta para a visualização de sua mídia."
 
 #: wp-admin/upload.php:44
 msgid "Clicking an item will display an Attachment Details dialog, which allows you to preview media and make quick edits. Any changes you make to the attachment details will be automatically saved."
-msgstr "Ao clicar em um item a caixa de diálogo Detalhes do Anexo será exibida, permitindo visualizar o arquivo e fazer edições rápidas. Todas as alterações que você fizer serão salvas automaticamente."
+msgstr "Ao clicar em um item irá exibir o Detalhes do Anexo, que permite visualizar a mídia e fazer edições rápidas. Todas as alterações feitas na tela Detalhes de Anexo serão salvos automaticamente."
 
 #: wp-admin/upload.php:46
 msgid "You can also delete individual items and access the extended edit screen from the details dialog."
-msgstr "Você também pode excluir itens individualmente e acessar a tela de edição expandida a partir do Detalhes do anexo."
+msgstr "Você também pode excluir itens individuais e acessar a tela de edição estendida a partir do Detalhes do anexo."
 
 #: wp-admin/about.php:30 wp-admin/credits.php:85 wp-admin/freedoms.php:22
 msgid "Thank you for updating! WordPress %s brings you a smoother writing and management experience."
-msgstr "Obrigado pela atualização! O WordPress %s traz para você uma nova experiência de escrita e  administração."
+msgstr "Obrigado pela atualização! WordPress %s traz para você uma nova experiência de escrita e  administração."
 
 #: wp-admin/about.php:57
 msgid "Manage your media with style"
@@ -44,19 +44,19 @@ msgstr "Gerencie suas mídias com estilo"
 
 #: wp-admin/about.php:58
 msgid "Explore your uploads in a beautiful, endless grid. A new details preview makes viewing and editing any amount of media in sequence a snap."
-msgstr "Explore seus uploads em uma linda visualização lado a lado. Uma nova tela de detalhes facilita a visualização e edição de uma sequência de qualquer quantidade de arquivos."
+msgstr "Explore seus uploads em uma linda visualização lado a lado. Uma nova tela de detalhes, torna a visualização e edição de qualquer quantidade de mídia na sequência, em um piscar de olhos."
 
 #: wp-admin/about.php:84
 msgid "Working with embeds has never been easier"
-msgstr "Trabalhar com mídias incorporadas nunca foi tão fácil"
+msgstr "Trabalhar com incorporações nunca foi tão fácil"
 
 #: wp-admin/about.php:85
 msgid "Paste in a YouTube URL on a new line, and watch it magically become an embedded video. Now try it with a tweet. Oh yeah &#8212; embedding has become a visual experience. The editor shows a true preview of your embedded content, saving you time and giving you confidence."
-msgstr "Cole uma URL do YouTube em uma nova linha, e veja como em um passe de mágica ela se transforma em um vídeo incorporado. Agora experimente com um tweet. Sensacional - incorporação tornou-se uma experiência visual. O editor mostra uma visualização real do seu conteúdo incorporado, economizando tempo e inspirando confiança."
+msgstr "Cole uma URL do YouTube em uma nova linha, e veja como em um passe de mágica se transforma em um vídeo incorporado. Agora experimente com um tweet. Sensacional - incorporação tornou-se uma experiência visual. O editor mostra uma verdadeira visualização do seu conteúdo incorporado, economizando tempo e dando-lhe confiança."
 
 #: wp-admin/about.php:86
 msgid "We&#8217;ve expanded the services supported by default, too &#8212; you can embed videos from CollegeHumor, playlists from YouTube, and talks from TED. <a href=\"http://codex.wordpress.org/Embeds\">Check out all of the embeds</a> that WordPress supports."
-msgstr "Nós expandimos os serviços suportados por padrão, agora você pode inserir vídeos do CollegeHumor, listas de reprodução do YouTube e palestras do TED. <a href=\"http://codex.wordpress.org/Embeds\">Confira todas as mídias incorporadas</a> que o WordPress suporta."
+msgstr "Nós expandimos os serviços suportados por padrão, agora você pode inserir vídeos do CollegeHumor, listas de reprodução do YouTube e palestras do TED. <a href=\"http://codex.wordpress.org/Embeds\">Confira todas as incorporações</a> que o WordPress suporta."
 
 #: wp-admin/about.php:94
 msgid "Focus on your content"
@@ -64,7 +64,7 @@ msgstr "Concentre-se no seu conteúdo"
 
 #: wp-admin/about.php:95
 msgid "Writing and editing is smoother and more immersive with an editor that expands to fit your content as you write, and keeps the formatting tools available at all times."
-msgstr "Escrever e editar ficou mais simples e mais objetivo, com um editor que se expande para se ajustar ao seu conteúdo durante a escrita e que mantém as ferramentas de formatação disponíveis o tempo todo."
+msgstr "A escrita e edição ficou mais simples e mais objetiva, com um editor que se expande para ajustar o seu conteúdo durante a escrita, e mantém as ferramentas de formatação disponíveis em todos os momentos."
 
 #: wp-admin/about.php:121
 msgid "Finding the right plugin"
@@ -72,7 +72,7 @@ msgstr "Encontre o plugin certo"
 
 #: wp-admin/about.php:122
 msgid "There are more than 30,000 free and open source plugins in the WordPress plugin directory. WordPress 4.0 makes it easier to find the right one for your needs, with new metrics, improved search, and a more visual browsing experience."
-msgstr "Existem mais de 30.000 plugins gratuitos e abertos no repositório oficial de plugins do WordPress. WordPress 4.0 deixa mais fácil a busca do plugin certo para suas necessidades, com novas métricas, pesquisa melhorada, e uma experiência de navegação mais visual."
+msgstr "Existem mais de 30.000 plugins livres e abertos no repositório oficial de plugins do WordPress. WordPress 4.0 deixa mais fácil a busca do plugin certo para suas necessidades, com novas métricas, pesquisa melhorada, e uma experiência de navegação mais visual."
 
 #: wp-admin/about.php:123
 msgid "Browse plugins"
@@ -145,8 +145,8 @@ msgstr[1] "Desanexados (%s)"
 msgctxt "uploaded files"
 msgid "Trash (%s)"
 msgid_plural "Trash (%s)"
-msgstr[0] "Lixeira (%s)"
-msgstr[1] "Lixeiras (%s)"
+msgstr[0] "Lixo (%s)"
+msgstr[1] "Lixos (%s)"
 
 #: wp-admin/install.php:216
 msgid "Welcome to the famous five-minute WordPress installation process! Just fill in the information below and you&#8217;ll be on your way to using the most extendable and powerful personal publishing platform in the world."
@@ -176,7 +176,7 @@ msgstr "Selecionar ação em massa"
 
 #: wp-admin/includes/screen.php:977
 msgid "Expand the editor to match the window height."
-msgstr "Expandir o editor para combinar com a altura da tela."
+msgstr "Expandir o editor para combinar com a altura da janela."
 
 #: wp-admin/includes/template.php:737
 msgid "Month"
@@ -196,7 +196,7 @@ msgstr "Minuto"
 
 #: wp-admin/setup-config.php:137
 msgid "We&#8217;re going to use this information to create a <code>wp-config.php</code> file."
-msgstr "Nós vamos usar essas informações para criar um arquivo <code>wp-config.php</code> no seu servidor."
+msgstr "Nós vamos usar essas informações para criar um arquivo <code>wp-config.php</code>."
 
 #: wp-admin/theme-install.php:82
 msgid "You can Search for themes by keyword, author, or tag, or can get more specific and search by criteria listed in the feature filter. Alternately, you can browse the themes that are Featured, Popular, or Latest. When you find a theme you like, you can preview it or install it."
@@ -2529,7 +2529,7 @@ msgstr "Editar comentário"
 
 #: wp-admin/edit-form-advanced.php:461
 msgid "Enter title here"
-msgstr "Digite o título aqui"
+msgstr "Entre o título aqui"
 
 #: wp-admin/edit-link-form.php:29 wp-admin/includes/meta-boxes.php:883
 msgid "Target"
@@ -9800,7 +9800,7 @@ msgstr "Compatível até:"
 
 #: wp-admin/includes/plugin-install.php:436
 msgid "Downloaded:"
-msgstr "Baixado:"
+msgstr "Recebidos:"
 
 #: wp-admin/includes/plugin-install.php:436
 msgid "%s time"

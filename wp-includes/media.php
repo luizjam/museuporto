@@ -801,8 +801,6 @@ function img_caption_shortcode( $attr, $content = null ) {
 			$content = $matches[1];
 			$attr['caption'] = trim( $matches[2] );
 		}
-	} elseif ( strpos( $attr['caption'], '<' ) !== false ) {
-		$attr['caption'] = wp_kses( $attr['caption'], 'post' );
 	}
 
 	/**
@@ -1249,10 +1247,6 @@ function wp_playlist_shortcode( $attr ) {
 		$atts['orderby'] = 'none';
 	}
 
-	if ( $atts['type'] !== 'audio' ) {
-		$atts['type'] = 'video';
-	}
-
 	$args = array(
 		'post_status' => 'inherit',
 		'post_type' => 'attachment',
@@ -1602,8 +1596,8 @@ function wp_audio_shortcode( $attr, $content = '' ) {
 	$html_atts = array(
 		'class'    => apply_filters( 'wp_audio_shortcode_class', 'wp-audio-shortcode' ),
 		'id'       => sprintf( 'audio-%d-%d', $post_id, $instances ),
-		'loop'     => wp_validate_boolean( $atts['loop'] ),
-		'autoplay' => wp_validate_boolean( $atts['autoplay'] ),
+		'loop'     => $atts['loop'],
+		'autoplay' => $atts['autoplay'],
 		'preload'  => $atts['preload'],
 		'style'    => 'width: 100%; visibility: hidden;',
 	);
@@ -1828,8 +1822,8 @@ function wp_video_shortcode( $attr, $content = '' ) {
 		'width'    => absint( $atts['width'] ),
 		'height'   => absint( $atts['height'] ),
 		'poster'   => esc_url( $atts['poster'] ),
-		'loop'     => wp_validate_boolean( $atts['loop'] ),
-		'autoplay' => wp_validate_boolean( $atts['autoplay'] ),
+		'loop'     => $atts['loop'],
+		'autoplay' => $atts['autoplay'],
 		'preload'  => $atts['preload'],
 	);
 
@@ -2649,11 +2643,6 @@ function wp_prepare_attachment_for_js( $attachment ) {
 
 	if ( $attachment->post_parent ) {
 		$post_parent = get_post( $attachment->post_parent );
-	} else {
-		$post_parent = false;
-	}
-
-	if ( $post_parent ) {
 		$parent_type = get_post_type_object( $post_parent->post_type );
 		if ( $parent_type && $parent_type->show_ui && current_user_can( 'edit_post', $attachment->post_parent ) ) {
 			$response['uploadedToLink'] = get_edit_post_link( $attachment->post_parent, 'raw' );
